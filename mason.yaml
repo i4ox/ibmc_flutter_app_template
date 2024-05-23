@@ -1,0 +1,5 @@
+bricks:
+  feature:
+    path: gen/bricks/feature
+  screen:
+    path: gen/bricks/screen

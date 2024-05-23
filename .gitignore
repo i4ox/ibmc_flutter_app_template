@@ -45,3 +45,7 @@ app.*.map.json
 # FVM
 .fvm/
 /.vscode/settings.json
+
+# Mason
+mason-lock.json
+/.mason/

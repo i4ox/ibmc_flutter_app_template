@@ -4,9 +4,11 @@ description: a Flutter template project for development by IBMC.
 publish_to: none
 
 dependencies:
+  auto_route: ^8.1.3
   elementary: ^3.0.0
   flutter:
     sdk: flutter
+  provider: ^6.1.2
 
 dev_dependencies:
   flutter_test:
