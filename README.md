@@ -86,3 +86,58 @@ sh scripts/fvm_vscode.sh
 ```
 
 Вы должны использовать `fvm flutter ...` везде вместо `flutter ...`, когда работаете с проектом.
+
+## Генерация кода
+
+Основная команда для генерации кода:
+
+```bash
+fvm flutter pub run build_runner build --delete-conflicting-outputs
+```
+
+### Генерация ассетов
+
+Вы можете легко добавлять ассеты в ваше приложение следуя следующим шагам:
+
+1. Добавьте ассет в директорию `assets`(убедитесь, что она подключена в `pubspec.yaml`).
+2. Запустьте сценарий [spider_build.sh](./scripts/spider_build.sh).
+  
+>```bash
+> sh scripts/spider_build.sh
+>```
+
+Конфигурация для Spider находится [здесь](./spider.yaml).
+
+> [!NOTE]
+> Добавьте необходимую информацию, например:
+> - Генерация API моделей и сервисов.
+> - Генерация чего-либо еще необходимого для работы или запуска проекта.
+
+### Mason
+
+Данный проект использует Mason, чтобы генерировать код, основанный на шаблонах.
+Выполните следующие команды, чтобы установить mason:
+
+```bash
+# Рекомендованный способ
+brew tap felangel/mason
+brew install mason
+
+# Или
+fvm dart pub global activate mason_cli
+```
+
+Данный проект использует два шаблона - [feature](./gen/bricks/feature/) и [screen](./gen/bricks/screen/).
+Чтобы использовать шаблоны, их надо прописать в [mason.yaml](./gen/bricks/screen/).
+
+Сначала надо загрузить эти шаблоны из mason.yaml:
+
+```bash
+mason get
+```
+
+После мы можем использовать эти команды для генерации кода:
+
+```bash
+mason make TEMPLATE_NAME # insert the template 'feature' or 'screen' instead of TEMPLATE_NAME
+```

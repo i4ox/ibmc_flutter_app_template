@@ -1,0 +1,15 @@
+generate_tests: true
+no_comments: true
+export: true
+use_part_of: true
+use_references_list: true
+
+package: assets
+
+groups:
+  - path: assets/images
+    class_name: Images
+    types: [ .png, .jpg, .jpeg, .webp, .webm, .bmp ]
+  - path: assets/icons
+    class_name: SvgIcons
+    types: [ .svg ]
