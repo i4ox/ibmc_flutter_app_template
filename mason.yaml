@@ -1,4 +1,6 @@
 bricks:
+  bloc:
+    path: gen/bricks/bloc
   feature:
     path: gen/bricks/feature
   screen:

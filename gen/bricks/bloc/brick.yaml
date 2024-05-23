@@ -1,0 +1,18 @@
+name: bloc
+description: Template for creating bloc
+version: 0.1.0+1
+
+environment:
+  mason: ">=0.1.0-dev.51 <0.1.0"
+
+vars:
+  feature_name:
+    type: string
+    description: Feature name
+    prompt: Enter name of feature
+    default: Example
+  bloc_name:
+    type: string
+    description: BLoC name
+    prompt: Enter name of bloc
+    default: Example

@@ -3,6 +3,7 @@ SCRIPTS_DIR := scripts
 
 CODEGEN_SCRIPT := $(SCRIPTS_DIR)/build_runner.sh
 CLEAN_IOS_SCRIPT := $(SCRIPTS_DIR)/clean_ios.sh
+CREATE_BLOCK_SCRIPT := $(SCRIPTS_DIR)/create_bloc.sh
 CREATE_FEATURE_SCRIPT := $(SCRIPTS_DIR)/create_feature.sh
 CREATE_SCREEN_SCRIPT := $(SCRIPTS_DIR)/create_screen.sh
 FORMAT_SCRIPT := $(SCRIPTS_DIR)/format.sh
@@ -19,6 +20,9 @@ codegen:
 
 clean_ios:
 	sh $(CLEAN_IOS_SCRIPT)
+
+create_bloc:
+	sh $(CREATE_BLOCK_SCRIPT)
 
 create_feature:
 	sh $(CREATE_FEATURE_SCRIPT)

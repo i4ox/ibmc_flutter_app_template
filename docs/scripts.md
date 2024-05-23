@@ -19,6 +19,10 @@ make <task_name> # for example, fvm_vscode or spider_build
 
 Clear local dependencies for iOS.
 
+## create_bloc
+
+Создает новый BLoC с помощью mason.
+
 ## create_feature
 
 Создает новую feature с помощью mason.
