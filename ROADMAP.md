@@ -1,0 +1,22 @@
+# Roadmap
+
+- [X] Base structure
+- [X] FVM Integration
+- [ ] Github Workflow
+- [X] Build Flavors
+- [ ] Launcher icons
+- [ ] Splash screen
+- [X] Auto-generation code with mason
+- [X] Helper scripts
+- [X] UiKit
+- [ ] Firebase
+- [ ] Supabase
+- [ ] Navigation
+- [ ] SharedPreferences
+- [ ] Localization
+- [ ] Cached Storage
+- [X] MVVM Pattern
+- [ ] Tests
+- [X] Assets
+- [ ] API generation
+- [ ] CI/CD
