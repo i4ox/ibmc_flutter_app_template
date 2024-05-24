@@ -127,7 +127,7 @@ brew install mason
 fvm dart pub global activate mason_cli
 ```
 
-Данный проект использует два шаблона - [feature](./gen/bricks/feature/) и [screen](./gen/bricks/screen/).
+Данный проект использует три шаблона - [feature](./gen/bricks/feature/), [screen](./gen/bricks/screen/) и [bloc](./gen/bricks/bloc/).
 Чтобы использовать шаблоны, их надо прописать в [mason.yaml](./gen/bricks/screen/).
 
 Сначала надо загрузить эти шаблоны из mason.yaml:
@@ -156,6 +156,8 @@ mason make TEMPLATE_NAME # insert the template 'feature' or 'screen' instead of 
 ## Сборка
 
 ### Версионирование
+
+<!-- TODO: Переделать данный раздел -->
 
 > [!NOTE]
 > Опишите здесь как происходит версионирование в вашем проекте.
@@ -198,7 +200,7 @@ void main() {
 
 ### Подписывание приложения, сертификатов и секретов
 
-Для Android следуйте [этому]() руководству.
+Для Android следуйте [этому(РЕАЛИЗОВАТЬ)]() руководству.
 
 Для iOS сертификаты профиля должны сохраняться здесь: `ios/certs`. Но не в коем случае не сохраняйте их в репозитория проекта.
 
