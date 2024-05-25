@@ -13,7 +13,7 @@
 - [ ] Supabase
 - [ ] Navigation
 - [ ] SharedPreferences
-- [ ] Localization
+- [X] Localization
 - [ ] Cached Storage
 - [X] MVVM Pattern
 - [ ] Tests

@@ -1,0 +1,19 @@
+{
+  "@@locale": "ru",
+  "@segmentCommon": {
+    "description": "Общие строки"
+  },
+
+  "@segmentExamples": {
+    "description": "Примеры"
+  },
+  "examplesTitle": "Примеры",
+  "string": "Привет, {name}!",
+  "@string": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  }
+}

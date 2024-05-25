@@ -1,0 +1,19 @@
+{
+  "@@locale": "en",
+  "@segmentCommon": {
+    "description": "Common lines"
+  },
+
+  "@segmentExamples": {
+    "description": "Examples"
+  },
+  "examplesTitle": "Examples",
+  "string": "Hello, {name}!",
+  "@string": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  }
+}

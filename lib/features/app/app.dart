@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:ibmc_flutter_app_template/l10n/app_localizations.g.dart';
 
 /// {@template app.class}
 /// Application.
@@ -14,7 +16,6 @@ class App extends StatefulWidget {
 }
 
 class _AppState extends State<App> {
-
   @override
   void initState() {
     super.initState();
@@ -29,8 +30,29 @@ class _AppState extends State<App> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: Center(child: Text("Hello, Flutter")),
+        body: Center(
+          child: Text(
+            "Hello, Flutter",
+          ),
+        ),
       ),
+
+      /// Localization.
+      locale: _localizations.firstOrNull,
+      localizationsDelegates: _localizationsDelegates,
+      supportedLocales: _localizations,
     );
   }
 }
+
+const _localizations = [
+  Locale('en', 'EN'),
+  Locale('ru', 'RU'),
+];
+
+const _localizationsDelegates = [
+  AppLocalizations.delegate,
+  GlobalMaterialLocalizations.delegate,
+  GlobalWidgetsLocalizations.delegate,
+  GlobalCupertinoLocalizations.delegate,
+];
