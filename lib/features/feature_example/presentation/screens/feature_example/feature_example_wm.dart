@@ -1,7 +1,6 @@
 import 'package:elementary/elementary.dart';
 import 'package:flutter/material.dart';
 import 'package:ibmc_flutter_app_template/common/mixin/localization_mixin.dart';
-import 'package:ibmc_flutter_app_template/common/mixin/theme_wm_mixin.dart';
 import 'package:ibmc_flutter_app_template/features/feature_example/di/feature_example_scope.dart';
 import 'package:ibmc_flutter_app_template/features/feature_example/presentation/screens/feature_example/feature_example_model.dart';
 import 'package:ibmc_flutter_app_template/features/feature_example/presentation/screens/feature_example/feature_example_screen.dart';

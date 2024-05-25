@@ -246,5 +246,5 @@ void main() {
 
 ## Дополнительные руководства
 
-- [SharedPreferences]()
+- [SharedPreferences](./docs/shared_preferences.md)
 - [Авторизация]()

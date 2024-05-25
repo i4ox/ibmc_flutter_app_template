@@ -6,6 +6,7 @@ CLEAN_IOS_SCRIPT := $(SCRIPTS_DIR)/clean_ios.sh
 CREATE_BLOCK_SCRIPT := $(SCRIPTS_DIR)/create_bloc.sh
 CREATE_FEATURE_SCRIPT := $(SCRIPTS_DIR)/create_feature.sh
 CREATE_SCREEN_SCRIPT := $(SCRIPTS_DIR)/create_screen.sh
+CREATE_SHARED_PREFERENCES := $(SCRIPTS_DIR)/create_shared_preferences.sh
 FORMAT_SCRIPT := $(SCRIPTS_DIR)/format.sh
 FVM_VSCODE_SCRIPT := $(SCRIPTS_DIR)/fvm_vscode.sh
 INIT_APP_SCRIPT := $(SCRIPTS_DIR)/init_app.sh
@@ -29,6 +30,9 @@ create_feature:
 
 create_screen:
 	sh $(CREATE_SCREEN_SCRIPT)
+
+create_shared_preferences:
+	sh $(CREATE_SHARED_PREFERENCES)
 
 format:
 	sh $(FORMAT_SCRIPT)

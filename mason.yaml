@@ -5,3 +5,5 @@ bricks:
     path: gen/bricks/feature
   screen:
     path: gen/bricks/screen
+  shared_preferences:
+    path: gen/bricks/shared_preferences

@@ -12,11 +12,12 @@
 - [ ] Firebase
 - [ ] Supabase
 - [X] Navigation
-- [ ] SharedPreferences
+- [X] SharedPreferences
 - [X] Localization
 - [ ] Cached Storage
 - [X] MVVM Pattern
 - [ ] Tests
+- [ ] Goldens
 - [X] Assets
 - [ ] API generation
 - [ ] CI/CD

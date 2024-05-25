@@ -1,0 +1,14 @@
+name: shared_preferences
+description: Template for creating a SharedPreferences
+
+version: 0.1.0+1
+
+environment:
+  mason: ">=0.1.0-dev.51 <0.1.0"
+
+vars:
+  name:
+    type: string
+    description: SharedPreferences name
+    prompt: Enter name of SharedPreferences
+    default: Example
