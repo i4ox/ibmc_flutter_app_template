@@ -8,6 +8,7 @@
 enum BuildType {
   /// Dev build type
   dev,
+
   /// Production build type
   prod,
 }

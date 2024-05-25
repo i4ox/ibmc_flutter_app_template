@@ -12,6 +12,7 @@ enum AppTextStyle {
       height: 1.2,
     ),
   ),
+
   /// Base text - use for any text on screen
   baseText(
     TextStyle(
@@ -21,6 +22,7 @@ enum AppTextStyle {
       height: 1.2,
     ),
   ),
+
   /// Base label - use for labels on buttons, widgets and etc
   baseLabel(
     TextStyle(

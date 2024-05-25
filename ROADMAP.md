@@ -11,7 +11,7 @@
 - [X] UiKit
 - [ ] Firebase
 - [ ] Supabase
-- [ ] Navigation
+- [X] Navigation
 - [ ] SharedPreferences
 - [X] Localization
 - [ ] Cached Storage

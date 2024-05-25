@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:ibmc_flutter_app_template/features/navigation/app_router.dart';
 import 'package:ibmc_flutter_app_template/l10n/app_localizations.g.dart';
+import 'package:provider/provider.dart';
 
 /// {@template app.class}
 /// Application.
@@ -16,26 +18,26 @@ class App extends StatefulWidget {
 }
 
 class _AppState extends State<App> {
+  late final AppRouter _appRouter;
+
   @override
   void initState() {
     super.initState();
+    _appRouter = context.read<AppRouter>();
   }
 
   @override
   void dispose() {
+    _appRouter.dispose();
     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text(
-            "Hello, Flutter",
-          ),
-        ),
-      ),
+    return MaterialApp.router(
+      // Router
+      routeInformationParser: _appRouter.defaultRouteParser(),
+      routerDelegate: _appRouter.delegate(),
 
       /// Localization.
       locale: _localizations.firstOrNull,

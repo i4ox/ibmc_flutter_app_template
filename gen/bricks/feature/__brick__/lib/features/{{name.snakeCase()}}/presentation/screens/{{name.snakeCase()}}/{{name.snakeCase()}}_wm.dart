@@ -19,7 +19,9 @@ abstract interface class I{{name.pascalCase()}}WM with ThemeIModelMixin implemen
 /// {@template {{name.snakeCase()}}_wm.class}
 /// [WidgetModel] for [{{name.pascalCase()}}Screen].
 /// {@endtemplate}
-final class {{name.pascalCase()}}WM extends WidgetModel<{{name.pascalCase()}}Screen, {{name.pascalCase()}}Model> with ThemeWMMixin implements I{{name.pascalCase()}}WM {
+final class {{name.pascalCase()}}WM extends WidgetModel<{{name.pascalCase()}}Screen, {{name.pascalCase()}}Model>
+    with ThemeWMMixin
+    implements I{{name.pascalCase()}}WM {
   /// {@macro {{name.snakeCase()}}_wm.class}
   {{name.pascalCase()}}WM(super._model);
 }

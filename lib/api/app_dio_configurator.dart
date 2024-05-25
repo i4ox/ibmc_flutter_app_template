@@ -1,4 +1,3 @@
-
 import 'dart:io';
 
 import 'package:dio/dio.dart';
@@ -26,17 +25,17 @@ class AppDioConfigurator {
       ..receiveTimeout = timeout
       ..sendTimeout = timeout;
 
-      (dio.httpClientAdapter as IOHttpClientAdapter).createHttpClient = () {
-        final client = HttpClient();
-        return client;
-      };
+    (dio.httpClientAdapter as IOHttpClientAdapter).createHttpClient = () {
+      final client = HttpClient();
+      return client;
+    };
 
-      dio.interceptors.addAll(interceptors);
+    dio.interceptors.addAll(interceptors);
 
-      if (kDebugMode) {
-        dio.interceptors.add(LogInterceptor(requestBody: true, responseBody: true));
-      }
+    if (kDebugMode) {
+      dio.interceptors.add(LogInterceptor(requestBody: true, responseBody: true));
+    }
 
-      return dio;
+    return dio;
   }
 }

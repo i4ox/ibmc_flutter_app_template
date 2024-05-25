@@ -25,7 +25,7 @@ class Environment {
 extension BuildTypeX on BuildType {
   /// Default url for build type.
   Url get defaultUrl => switch (this) {
-    BuildType.dev => Url.dev,
-    BuildType.prod => Url.prod,
-  };
+        BuildType.dev => Url.dev,
+        BuildType.prod => Url.prod,
+      };
 }

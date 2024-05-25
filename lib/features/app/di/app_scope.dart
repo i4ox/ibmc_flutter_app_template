@@ -32,4 +32,3 @@ final class AppScope implements IAppScope {
     // required this.logger,
   });
 }
-

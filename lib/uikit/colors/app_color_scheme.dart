@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:ibmc_flutter_app_template/uikit/colors/color_palette.dart';
 

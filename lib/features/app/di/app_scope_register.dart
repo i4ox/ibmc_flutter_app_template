@@ -1,4 +1,3 @@
-
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 import 'package:ibmc_flutter_app_template/api/app_dio_configurator.dart';

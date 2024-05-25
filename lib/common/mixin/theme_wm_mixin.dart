@@ -3,7 +3,8 @@ import 'package:ibmc_flutter_app_template/uikit/uikit.dart';
 
 /// A mixin with [AppColorScheme].
 /// Used with [WidgetModel] subclasses.
-mixin ThemeWMMixin<W extends ElementaryWidget, M extends ElementaryModel> on WidgetModel<W, M> implements ThemeIModelMixin {
+mixin ThemeWMMixin<W extends ElementaryWidget, M extends ElementaryModel> on WidgetModel<W, M>
+    implements ThemeIModelMixin {
   late AppColorScheme _colorScheme;
   late AppTextScheme _textScheme;
 
